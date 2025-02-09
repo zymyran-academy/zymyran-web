@@ -1,21 +1,49 @@
 <template>
-  <div class="h-dvh flex flex-col items-center justify-center">
-    <div class="w-96 text-center">
-      <div>
-        В модуле nuxt/ui уже установленна tailwindcss 3 версии. можель смотреть классы по ссылке:
-        <a href="https://v3.tailwindcss.com/"
-           class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">https://v3.tailwindcss.com/</a>
-      </div>
-      <div>
-        Так же можешь смотреть локально все классы по ссылке:
-        <a href="http://localhost:3000/_tailwind/"
-           class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">http://localhost:3000/_tailwind/</a>
-      </div>
-      <div>
-        А лучше устоновить расшерение на VsCode:
-        <a href="https://v3.tailwindcss.com/docs/editor-setup"
-           class="font-medium text-blue-600 underline dark:text-blue-500 hover:no-underline">Editor Setup</a>
-      </div>
-    </div>
+  <div class="bg-slate-50 min-h-svh">
+    <!-- header info -->
+    <header class="px-12 flex flex-row items-center justify-between bg-white">
+      <section class="py-2 flex gap-2">
+        <Icon name="ph:map-pin" size="18px" />
+        <div>г.Алматы</div>
+      </section>
+
+      <section class="py-2 flex gap-2">
+        <Icon name="ph:phone-call" size="18px" class="text-primary" />
+        <div>+ 7 778 777 88 88</div>
+      </section>
+    </header>
+    <!-- Header -->
+    <header class="px-12 flex flex-row items-center justify-center bg-white">
+      <section class="py-2 logo h-16 w-16">
+        <img src="/images/logotype.svg" alt="" />
+      </section>
+
+      <menu class="mx-auto flex flex-row items-center justify-center gap-0">
+        <ul class="list-none flex flex-row items-center justify-center gap-0">
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
+        </ul>
+      </menu>
+
+      <section>
+        <button
+          type="button"
+          class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg hover:shadow-sm shadow"
+        >
+          Подать заявку
+        </button>
+      </section>
+    </header>
   </div>
 </template>
+
+<script>
+export default {
+  name: "App",
+};
+</script>
+
+<style></style>
