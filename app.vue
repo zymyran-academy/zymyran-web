@@ -1,3 +1,42 @@
+<script setup>
+import { vMaska } from "maska/vue";
+import { ref } from "vue";
+
+const phoneNumber = ref("");
+const baseWhatsappUrl = "https://wa.me/77477010361";
+
+const sendMessage = (message) => {
+  const formattedMessage = encodeURIComponent(message);
+  window.open(`${baseWhatsappUrl}?text=${formattedMessage}`, "_blank");
+};
+
+const handleSubmit = () => {
+  let message = `Добрый день! Обращение с сайта.
+Прошу проконсультировать по курсам программирования`;
+  if (phoneNumber.value.trim()) {
+    message += `\n\nот: ${phoneNumber.value}`;
+  }
+  sendMessage(message);
+};
+
+const requestPriceLaravel = () => {
+  const message = `Добрый день! Обращение с сайта.
+Прошу проконсультировать по спринт-курсу 'Laravel'`;
+  sendMessage(message);
+};
+const requestPriceVue = () => {
+  const message = `Добрый день! Обращение с сайта.
+Прошу проконсультировать по спринт-курсу 'VueJS'`;
+  sendMessage(message);
+};
+
+const requestContact = () => {
+  const message = `Добрый день! Обращение с сайта.
+Прошу проконсультировать курсу программирования.`;
+  sendMessage(message);
+};
+</script>
+
 <template>
   <div class="relative min-h-svh bg-slate-50">
     <div
@@ -5,15 +44,15 @@
     ></div>
     <!-- header contacts -->
     <header class="px-3 md:px-12 flex flex-row items-center justify-between bg-white">
-      <section class="py-2 flex gap-2">
+      <div class="py-2 flex gap-2 items-center">
         <Icon name="ph:map-pin" size="18px" />
         <div>г.Алматы</div>
-      </section>
+      </div>
 
-      <section class="py-2 flex gap-2">
+      <div class="py-2 flex gap-2 items-center">
         <Icon name="ph:phone-call" size="18px" class="text-primary" />
-        <div>+ 7 778 777 88 88</div>
-      </section>
+        <div>+7 747 701 0361</div>
+      </div>
     </header>
     <!-- header -->
     <header
@@ -25,16 +64,18 @@
 
       <menu class="mx-auto hidden md:flex flex-row items-center justify-center gap-0">
         <ul class="list-none flex flex-row items-center justify-center gap-0">
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Menu item</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Курсы</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Процесс обучения</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Вопросы и ответы</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Партнеры</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="">Контакты</a></li>
         </ul>
       </menu>
 
       <section>
-        <UButton color="primary" variant="solid">Подать заявку</UButton>
+        <UButton color="primary" variant="solid" @click="requestContact"
+          >Подать заявку</UButton
+        >
       </section>
     </header>
 
@@ -44,20 +85,25 @@
         <div class="md:w-2/4 flex flex-col items-start">
           <img class="mb-2 h-5" src="/images/webp/logotype-text.webp" alt="" />
           <h1 class="mb-6 text-4xl font-bold">
-            Заголовок для сайта обучения которое призовет к действию
+            🚀 Освой веб-разработку и стань востребованным специалистом!
           </h1>
           <h3 class="mb-4">
-            Подзаголовок для сайта обучения которое призовет к действию помимо основного
-            заголовка и еще скажет что то типо запиши номер мы перезвоним
+            Курсы, которые помогут вам с нуля освоить современную разработку и уверенно
+            войти в IT. Гибридное обучение — онлайн и офлайн, спринт-курсы для быстрого
+            старта.
           </h3>
           <div class="flex flex-row items-center gap-2">
             <UInput
               class="w-64"
               color="gray"
               variant="outline"
-              placeholder="+7 (---) -- --"
+              placeholder="+7 (---) --- -- --"
+              v-model="phoneNumber"
+              v-maska="'+7 (###) ### ## ##'"
             />
-            <UButton color="primary" variant="solid">Подать заявку</UButton>
+            <UButton color="primary" variant="solid" @click="handleSubmit"
+              >Подать заявку</UButton
+            >
           </div>
         </div>
         <div class="md:w-2/4 hidden md:flex flex-col items-center">
@@ -76,15 +122,15 @@
             width="448"
             src="/images/webp/about-image.webp"
             alt=""
-            class="w-80 md:w-auto"
+            class="w-80 sm:w-[448px]"
           />
         </div>
         <div class="md:w-2/4 items-start flex flex-col">
-          <h2 class="text-xl font-bold">Этапы чего либо</h2>
+          <h2 class="text-xl font-bold">🔥 Почему выбирают нас?</h2>
           <!-- items step 1 -->
           <div class="relative w-9/12 flex flex-col bg-white rounded-lg p-4 mt-6">
-            <h4 class="font-semibold">Первый этап этого списка</h4>
-            <p>Детальное или неполное описание первого элемента нашего списка</p>
+            <h4 class="font-semibold">Гибридное обучение</h4>
+            <p>Проходите курс онлайн или офлайн – выбирайте удобный формат.</p>
 
             <div
               class="absolute right-3 -top-4 flex justify-center items-center h-8 w-8 rounded-lg bg-blue-400 text-white font-black"
@@ -94,8 +140,8 @@
           </div>
           <!-- items step 2 -->
           <div class="relative w-9/12 flex flex-col bg-white rounded-lg p-4 ml-14 mt-6">
-            <h4 class="font-semibold">Первый этап этого списка</h4>
-            <p>Детальное или неполное описание первого элемента нашего списка</p>
+            <h4 class="font-semibold">Практика с первого дня</h4>
+            <p>Минимум теории, максимум кода и работы над реальными проектами.</p>
 
             <div
               class="absolute right-3 -top-4 flex justify-center items-center h-8 w-8 rounded-lg bg-blue-400 text-white font-black"
@@ -105,8 +151,8 @@
           </div>
           <!-- items step 3 -->
           <div class="relative w-9/12 flex flex-col bg-white rounded-lg p-4 mt-6">
-            <h4 class="font-semibold">Первый этап этого списка</h4>
-            <p>Детальное или неполное описание первого элемента нашего списка</p>
+            <h4 class="font-semibold">Наставники – практикующие разработчики</h4>
+            <p>Обучение у экспертов, которые ежедневно работают в IT.</p>
 
             <div
               class="absolute right-3 -top-4 flex justify-center items-center h-8 w-8 rounded-lg bg-blue-400 text-white font-black"
@@ -124,7 +170,7 @@
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
           <h3 class="text-3xl font-bold">Спринт курсы</h3>
-          <p>Детальное или неполное описание первого элемента нашего списка</p>
+          <p>⚡ Быстрый старт в IT за 15 недель</p>
         </div>
         <!-- content -->
         <div class="flex flex-col gap-4">
@@ -133,15 +179,19 @@
               <img src="/images/webp/course-vue.webp" alt="" class="" width="180" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
-              <h4 class="text-xl font-bold">Vue.js - зачем нужен фреймворк в JS</h4>
+              <h4 class="text-xl font-bold">Vue.js — зачем нужен фреймворк в JS?</h4>
               <p>
-                Front-end разработчик - создает пользователю сайта или мобильного
-                приложения, возможность достичь своих целей
+                Изучите Vue.js и научитесь разрабатывать динамичные веб-приложения с
+                удобной архитектурой.
               </p>
               <p class="text-slate-700 font-bold">15 недель интенсива</p>
               <p class="text-slate-700 font-bold">20 человек для старта спринта</p>
-              <UButton color="primary" class="w-fit px-6" variant="solid"
-                >Запросить стоймость</UButton
+              <UButton
+                color="primary"
+                class="w-fit px-6"
+                variant="solid"
+                @click="requestPriceVue"
+                >Запросить стоимость курса</UButton
               >
             </div>
           </div>
@@ -151,15 +201,19 @@
               <img src="/images/webp/course-laravel.webp" alt="" class="" width="180" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
-              <h4 class="text-xl font-bold">Laravel - или фреймворк для PHP</h4>
+              <h4 class="text-xl font-bold">Laravel — топовый PHP-фреймворк</h4>
               <p>
-                Front-end разработчик - создает пользователю сайта или мобильного
-                приложения, возможность достичь своих целей
+                Станьте backend-разработчиком, создавая мощные и масштабируемые проекты на
+                Laravel.
               </p>
               <p class="text-slate-700 font-bold">10 недель интенсива</p>
               <p class="text-slate-700 font-bold">15 человек для старта спринта</p>
-              <UButton color="primary" class="w-fit px-6" variant="solid"
-                >Запросить стоймость</UButton
+              <UButton
+                color="primary"
+                class="w-fit px-6"
+                variant="solid"
+                @click="requestPriceLaravel"
+                >Запросить стоимость курса</UButton
               >
             </div>
           </div>
@@ -173,7 +227,7 @@
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
           <h3 class="text-3xl font-bold">Работы наших студентов</h3>
-          <p>Детальное или неполное описание первого элемента нашего списка</p>
+          <p>Посмотрите реальные проекты, которые студенты сделали во время обучения.</p>
         </div>
 
         <!-- content -->
@@ -231,7 +285,8 @@
             >
               <div class="font-bold text-lg p-2 px-4">Лекции</div>
               <div class="text-md p-2 px-4">
-                Описание для карточки которая описывает очень копротко лекции
+                Интерактивные занятия, на которых преподаватели объясняют ключевые
+                концепции и принципы разработки.
               </div>
               <img src="/images/way-2.png" alt="" class="object-cover w-full mt-auto" />
             </div>
@@ -242,9 +297,10 @@
             >
               <div class="font-bold text-lg p-2 px-4">Семинары</div>
               <div class="text-md p-2 px-4">
-                Описание для карточки которая описывает очень копротко лекции
+                Разбор реальных задач, практика, обсуждение сложных вопросов и обратная
+                связь от экспертов.
               </div>
-              <img src="/images/way-1.png" alt="" class="object-contain w-full mt-auto" />
+              <img src="/images/way-0.png" alt="" class="object-contain w-full mt-auto" />
             </div>
           </div>
           <div class="md:w-2/6 p-2">
@@ -253,7 +309,8 @@
             >
               <div class="font-bold text-lg p-2 px-4">Проект</div>
               <div class="text-md p-2 px-4">
-                Описание для карточки которая описывает очень копротко лекции
+                Создание собственного проекта в портфолио с применением всех полученных
+                знаний.
               </div>
               <img src="/images/way-3.png" alt="" class="object-contain w-full mt-auto" />
             </div>
@@ -297,9 +354,13 @@
               class="w-64"
               color="gray"
               variant="outline"
-              placeholder="+7 (---) -- --"
+              placeholder="+7 (---) --- -- --"
+              v-model="phoneNumber"
+              v-maska="'+7 (###)-###-##-##'"
             />
-            <UButton color="blue" variant="solid">Подать заявку</UButton>
+            <UButton color="blue" variant="solid" @click="handleSubmit"
+              >Подать заявку</UButton
+            >
           </div>
           <p class="mt-2 max-w-80 font-bold">Мы в социальных сетях</p>
           <ul class="list-none flex flex-row items-center justify-center gap-4 font-bold">
