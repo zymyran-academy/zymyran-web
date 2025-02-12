@@ -2,6 +2,15 @@
 import { vMaska } from "maska/vue";
 import { ref } from "vue";
 
+useSeoMeta({
+  title: "ZymyranAcademy - школа программирования",
+  ogTitle: "ZymyranAcademy - школа программирования",
+  description: "Гибридное обучение — онлайн и офлайн, спринт-курсы для быстрого старта.",
+  ogDescription:
+    "Гибридное обучение — онлайн и офлайн, спринт-курсы для быстрого старта.",
+  ogImage: "https://zymyran-academy.kz/images/thumb.png",
+});
+
 const phoneNumber = ref("");
 const baseWhatsappUrl = "https://wa.me/77477010361";
 
@@ -274,7 +283,6 @@ const requestContact = () => {
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
           <h3 class="text-3xl font-bold">Как проходят курсы</h3>
-          <p>Детальное или неполное описание первого элемента нашего списка</p>
         </div>
 
         <!-- content -->
