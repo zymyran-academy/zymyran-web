@@ -178,52 +178,103 @@ const requestContact = () => {
       <div class="flex flex-col gap-4">
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
-          <h3 class="text-3xl font-bold">Спринт курсы</h3>
-          <p>⚡ Быстрый старт в IT за 15 недель</p>
+          <h3 class="text-3xl font-bold">Курсы</h3>
+          <p>⚡ Быстрый старт в IT за 15–28 недель</p>
         </div>
         <!-- content -->
         <div class="flex flex-col gap-4">
-          <div class="flex flex-col md:flex-row rounded-xl bg-[#DDF3FF]">
+          <!-- Product Management with AI -->
+          <div class="flex flex-col md:flex-row rounded-xl bg-[#FFEACC]">
             <div class="relative min-w-56 h-full overflow-hidden">
-              <img src="/images/webp/course-vue.webp" alt="" class="" width="180" />
+              <img src="/images/manager.png" alt="" width="180" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
-              <h4 class="text-xl font-bold">Vue.js — зачем нужен фреймворк в JS?</h4>
+              <h4 class="text-xl font-bold">Product Management with AI</h4>
               <p>
-                Изучите Vue.js и научитесь разрабатывать динамичные веб-приложения с
-                удобной архитектурой.
+                Пройдите весь путь от исследования до запуска AI-продукта: CJM, MVP,
+                AARRR-метрики и этика AI в одном интенсиве.
               </p>
-              <p class="text-slate-700 font-bold">15 недель интенсива</p>
-              <p class="text-slate-700 font-bold">20 человек для старта спринта</p>
+              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <UButton
                 color="primary"
                 class="w-fit px-6"
                 variant="solid"
-                @click="requestPriceVue"
-                >Запросить стоимость курса</UButton
+                @click="requestPricePM"
               >
+                Запросить стоимость курса
+              </UButton>
             </div>
           </div>
 
-          <div class="flex flex-col md:flex-row rounded-xl bg-[#E1E6E8]">
-            <div class="relative min-w-56 h-full overflow-hidden py-4">
-              <img src="/images/webp/course-laravel.webp" alt="" class="" width="180" />
+          <!-- Frontend with AI -->
+          <div class="flex flex-col md:flex-row rounded-xl bg-[#DDF3FF]">
+            <div class="relative min-w-56 h-full overflow-hidden">
+              <img src="/images/front.png" alt="" width="180" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
-              <h4 class="text-xl font-bold">Laravel — топовый PHP-фреймворк</h4>
+              <h4 class="text-xl font-bold">Frontend with AI</h4>
               <p>
-                Станьте backend-разработчиком, создавая мощные и масштабируемые проекты на
-                Laravel.
+                От HTML до React и интеграции AI: создайте своё первое SPA-приложение с
+                интеллектом.
               </p>
-              <p class="text-slate-700 font-bold">10 недель интенсива</p>
-              <p class="text-slate-700 font-bold">15 человек для старта спринта</p>
+              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <UButton
                 color="primary"
                 class="w-fit px-6"
                 variant="solid"
-                @click="requestPriceLaravel"
-                >Запросить стоимость курса</UButton
+                @click="requestPriceFrontend"
               >
+                Запросить стоимость курса
+              </UButton>
+            </div>
+          </div>
+
+          <!-- Backend with AI -->
+          <div class="flex flex-col md:flex-row rounded-xl bg-[#E1E6E8]">
+            <div class="relative min-w-56 h-full overflow-hidden">
+              <img src="/images/back.png" alt="" width="180" />
+            </div>
+            <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
+              <h4 class="text-xl font-bold">Backend with AI</h4>
+              <p>
+                Освойте Flask, SQL и AI-интеграции — от первого API до продакшн-деплоя.
+              </p>
+              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">Командный финальный проект</p>
+              <UButton
+                color="primary"
+                class="w-fit px-6"
+                variant="solid"
+                @click="requestPriceBackend"
+              >
+                Запросить стоимость курса
+              </UButton>
+            </div>
+          </div>
+
+          <!-- Competitive Programming with AI -->
+          <div class="flex flex-col md:flex-row rounded-xl bg-[#FFF5D1]">
+            <div class="relative min-w-56 h-full overflow-hidden">
+              <img src="/images/act.png" alt="" width="180" />
+            </div>
+            <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
+              <h4 class="text-xl font-bold">Спортивное программирование с AI</h4>
+              <p>
+                Решай задачи Codeforces, изучай C++ и Python и используй AI-ассистентов
+                как репетиторов и тестировщиков.
+              </p>
+              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">Индивидуальный контест-проект</p>
+              <UButton
+                color="primary"
+                class="w-fit px-6"
+                variant="solid"
+                @click="requestPriceCP"
+              >
+                Запросить стоимость курса
+              </UButton>
             </div>
           </div>
         </div>
