@@ -55,7 +55,7 @@ const requestContact = () => {
     <header class="px-3 md:px-12 flex flex-row items-center justify-between bg-white">
       <div class="py-2 flex gap-2 items-center">
         <Icon name="ph:map-pin" size="18px" />
-        <div>г.Алматы</div>
+        <div>г.Кызылорда</div>
       </div>
 
       <div class="py-2 flex gap-2 items-center">
