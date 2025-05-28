@@ -12,7 +12,7 @@ useSeoMeta({
 });
 
 const phoneNumber = ref("");
-const baseWhatsappUrl = "https://wa.me/77477010361";
+const baseWhatsappUrl = "https://wa.me/77771749630";
 
 const sendMessage = (message) => {
   const formattedMessage = encodeURIComponent(message);
@@ -44,6 +44,99 @@ const requestContact = () => {
 Прошу проконсультировать курсу программирования.`;
   sendMessage(message);
 };
+
+const teamList = [
+  {
+    name: "Тагзым Наурыз Атанбекулы",
+    role: "Academic Lead",
+    experience: "10 лет в IT-образовании, старший преподаватель SDU University",
+  },
+  {
+    name: "Матвей Ефимов",
+    role: "Senior Backend & AI Instructor",
+    experience: "Методист Hexlet, Нетология и Skillbox",
+  },
+  {
+    name: "Наурызбаев Аян",
+    role: "Senior Full Stack Instructor",
+    experience: "Team Lead в АО «МФО KMF»",
+  },
+  {
+    name: "Дмитрий Печагин",
+    role: "Senior Full Stack Instructor",
+    experience: "Инженер Python/FastAPI + React",
+  },
+  {
+    name: "Ramin Nasraddinzade",
+    role: "AI Integration Mentor",
+    experience: "Frontend архитектор, преподаватель в IT STEP",
+  },
+  {
+    name: "Азиз Алдиярбеков",
+    role: "Data Science Mentor",
+    experience: "CVM менеджер Tele2, MSc Data Science",
+  },
+  {
+    name: "Каракойшы Аббас",
+    role: "Backend Coach",
+    experience: "Senior PHP/Bitrix разработчик в АО «МФО KMF»",
+  },
+  {
+    name: "Maxim Nosov",
+    role: "DevOps Mentor",
+    experience: "Full Stack инженер (React/Next, Node, Docker, CI/CD)",
+  },
+  {
+    name: "Патдыев Эмра",
+    role: "Teaching Assistant",
+    experience: "Frontend разработчик Jussplay",
+  },
+  {
+    name: "Нуралы Ортай",
+    role: "ML Assistant",
+    experience: "Младший ML-инженер, консультант по машинному обучению",
+  },
+  {
+    name: "Борис Соболев",
+    role: "Product Director",
+    experience: "Руководитель продуктового направления в Т Банке",
+  },
+  {
+    name: "Никита Юртаев",
+    role: "Senior Product Manager",
+    experience: "6+ лет в AI-стартапах",
+  },
+  {
+    name: "Антон Конохов",
+    role: "Product Manager",
+    experience: "6+ лет опыта, запуск ERP, CRM и AI-решений",
+  },
+  {
+    name: "Анелия Калиева",
+    role: "Product Manager",
+    experience: "8 лет в fintech проектах Beeline KZ и Home Credit",
+  },
+  {
+    name: "Олжас Досайбек",
+    role: "Project Manager",
+    experience: "4 года, управление распределёнными командами",
+  },
+  {
+    name: "Темирлан Хаххазов",
+    role: "Product Manager",
+    experience: "Halyk Insurance, запуск AI-сервисов",
+  },
+  {
+    name: "Илияс Серикбай",
+    role: "Product Manager & Startup Founder",
+    experience: "Магистр из Манчестера, более 100 интервью с пользователями",
+  },
+  {
+    name: "Ассем Амантаева",
+    role: "Project & Youth Initiatives Manager",
+    experience: "EdTech и публичные выступления, наставничество",
+  },
+];
 </script>
 
 <template>
@@ -60,7 +153,7 @@ const requestContact = () => {
 
       <div class="py-2 flex gap-2 items-center">
         <Icon name="ph:phone-call" size="18px" class="text-primary" />
-        <div>+7 747 701 0361</div>
+        <div>+7 777 174 9630</div>
       </div>
     </header>
     <!-- header -->
@@ -378,6 +471,56 @@ const requestContact = () => {
       </div>
     </section>
 
+    <!-- team section -->
+    <section class="py-12 px-3 md:px-12">
+      <!-- заголовок -->
+      <div class="mb-8">
+        <h3 class="text-3xl font-bold text-black">Наша команда</h3>
+        <p class="text-gray-600 mt-1">Вдохновляем на рост, обучаем с уверенностью</p>
+      </div>
+      <!-- Сетка преподавателей -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          v-for="member in teamList"
+          :key="member.name"
+          class="bg-gray-50 border border-gray-200 rounded-xl p-5 shadow-sm"
+        >
+          <h4 class="text-lg font-semibold text-primary-dark mb-1">{{ member.name }}</h4>
+          <p class="text-sm font-bold text-blue-600 mb-1">{{ member.role }}</p>
+          <p class="text-sm text-gray-600">{{ member.experience }}</p>
+        </div>
+      </div>
+      <!-- блок основателя -->
+      <div class="pt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+        <div>
+          <blockquote class="text-2xl text-black font-medium">
+            «ИИ — это не просто инструмент для технологических гигантов, а катализатор
+            обучения и инноваций. Я создал Zymyran Academy, чтобы дать следующему
+            поколению разработчиков образование с прицелом на ИИ»
+          </blockquote>
+          <p class="mt-4 text-lg font-semibold text-black">— Диас Арымбеков.</p>
+        </div>
+        <div class="relative w-full h-full max-w-xs md:max-w-md mx-auto">
+          <img
+            src="/images/founder.png"
+            alt="Арымбеков Диас"
+            class="rounded-xl object-cover shadow-md"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 p-4 bg-opacity-70 text-white rounded-b-xl"
+          >
+            <h4 class="text-xl font-semibold">Основатель академии</h4>
+            <p class="text-lg">Диас Арымбеков</p>
+            <div class="hidden mt-2 flex flex-wrap gap-2 text-xs text-white font-medium">
+              <span class="bg-white bg-opacity-10 px-2 py-0.5 rounded">Front-end</span>
+              <span class="bg-white bg-opacity-10 px-2 py-0.5 rounded">VueJS</span>
+              <span class="bg-white bg-opacity-10 px-2 py-0.5 rounded">ElectronJS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer  -->
     <footer
       class="relatie pb-12 px-3 md:px-12 py-7 bg-slate-900 text-white rounded-tl-2xl rounded-tr-2xl"
@@ -391,8 +534,8 @@ const requestContact = () => {
         <div class="flex flex-col items-start md:w-2/4 gap-4">
           <img class="h-7 md:h-11" src="/images/webp/logotype-text-white.webp" alt="" />
           <p class="mt-2 max-w-80">
-            Подзаголовок для сайта обучения которое призовет к действию помимо основного
-            заголовка и еще скажет что то типо запиши номер мы перезвоним
+            Один курс — большое начало. <br />Присоединяйся к тем, кто уже делает
+            <br />шаг в IT.
           </p>
           <ul
             class="flex flex-col md:flex-row items-start md:items-center md:justify-center gap-4 font-bold"
@@ -426,7 +569,8 @@ const requestContact = () => {
             <li>
               <a
                 class="h-11 w-11 rounded-lg border border-white text-white bg-transparent hover:bg-slate-500 hover:text-secondary hover:transition-all flex items-center justify-center"
-                href=""
+                href="https://www.instagram.com/zymyranacademy?igsh=MnVubTY2YTd3cm5h&utm_source=qr"
+                target="_blank"
               >
                 <Icon name="ph:instagram-logo" size="24px" />
               </a>
@@ -434,7 +578,8 @@ const requestContact = () => {
             <li>
               <a
                 class="h-11 w-11 rounded-lg border border-white text-white bg-transparent hover:bg-slate-500 hover:text-secondary hover:transition-all flex items-center justify-center"
-                href=""
+                href="https://t.me/zymyran_academy/"
+                target="_blank"
               >
                 <Icon name="ph:telegram-logo" size="24px" />
               </a>
