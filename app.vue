@@ -289,13 +289,19 @@ const teamList = [
               </p>
               <p class="text-slate-700 font-bold">28 недель</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
+              <p class="text-2xl font-extrabold text-slate-700">
+                400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
+                  >₸</span
+                >
+              </p>
+
               <UButton
                 color="primary"
                 class="w-fit px-6"
                 variant="solid"
                 @click="requestPricePM"
               >
-                Запросить стоимость курса
+                Хочу пройти обучение!
               </UButton>
             </div>
           </div>
@@ -313,13 +319,19 @@ const teamList = [
               </p>
               <p class="text-slate-700 font-bold">28 недель</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
+              <p class="text-2xl font-extrabold text-slate-700">
+                400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
+                  >₸</span
+                >
+              </p>
+
               <UButton
                 color="primary"
                 class="w-fit px-6"
                 variant="solid"
                 @click="requestPriceFrontend"
               >
-                Запросить стоимость курса
+                Хочу пройти обучение!
               </UButton>
             </div>
           </div>
@@ -336,13 +348,19 @@ const teamList = [
               </p>
               <p class="text-slate-700 font-bold">28 недель</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
+              <p class="text-2xl font-extrabold text-slate-700">
+                400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
+                  >₸</span
+                >
+              </p>
+
               <UButton
                 color="primary"
                 class="w-fit px-6"
                 variant="solid"
                 @click="requestPriceBackend"
               >
-                Запросить стоимость курса
+                Хочу пройти обучение!
               </UButton>
             </div>
           </div>
@@ -360,13 +378,19 @@ const teamList = [
               </p>
               <p class="text-slate-700 font-bold">28 недель</p>
               <p class="text-slate-700 font-bold">Индивидуальный контест-проект</p>
+              <p class="text-2xl font-extrabold text-slate-700">
+                400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
+                  >₸</span
+                >
+              </p>
+
               <UButton
                 color="primary"
                 class="w-fit px-6"
                 variant="solid"
                 @click="requestPriceCP"
               >
-                Запросить стоимость курса
+                Хочу пройти обучение!
               </UButton>
             </div>
           </div>
