@@ -502,7 +502,7 @@ const teamList = [
         </div>
         <div class="relative w-full h-full max-w-xs md:max-w-md mx-auto">
           <img
-            src="/images/founder.png"
+            src="/images/founder.webp"
             alt="Арымбеков Диас"
             class="rounded-xl object-cover shadow-md"
           />
