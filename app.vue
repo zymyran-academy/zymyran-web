@@ -278,8 +278,10 @@ const teamList = [
         <div class="flex flex-col gap-4">
           <!-- Product Management with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#FFEACC]">
-            <div class="relative min-w-56 h-full overflow-hidden">
-              <img src="/images/manager.png" alt="" width="180" />
+            <div
+              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+            >
+              <img src="/images/manager.png" alt="" class="object-cover" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Product Management with AI</h4>
@@ -301,15 +303,17 @@ const teamList = [
                 variant="solid"
                 @click="requestPricePM"
               >
-                Хочу пройти обучение!
+                Хочу пройти курс!
               </UButton>
             </div>
           </div>
 
           <!-- Frontend with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#DDF3FF]">
-            <div class="relative min-w-56 h-full overflow-hidden">
-              <img src="/images/front.png" alt="" width="180" />
+            <div
+              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+            >
+              <img src="/images/front.png" alt="" class="object-cover" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Frontend with AI</h4>
@@ -331,15 +335,17 @@ const teamList = [
                 variant="solid"
                 @click="requestPriceFrontend"
               >
-                Хочу пройти обучение!
+                Хочу пройти курс!
               </UButton>
             </div>
           </div>
 
           <!-- Backend with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#E1E6E8]">
-            <div class="relative min-w-56 h-full overflow-hidden">
-              <img src="/images/back.png" alt="" width="180" />
+            <div
+              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+            >
+              <img src="/images/back.png" alt="" class="object-cover" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Backend with AI</h4>
@@ -360,15 +366,17 @@ const teamList = [
                 variant="solid"
                 @click="requestPriceBackend"
               >
-                Хочу пройти обучение!
+                Хочу пройти курс!
               </UButton>
             </div>
           </div>
 
           <!-- Competitive Programming with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#FFF5D1]">
-            <div class="relative min-w-56 h-full overflow-hidden">
-              <img src="/images/act.png" alt="" width="180" />
+            <div
+              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+            >
+              <img src="/images/act.png" alt="" class="object-cover" />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Спортивное программирование с AI</h4>
@@ -390,7 +398,7 @@ const teamList = [
                 variant="solid"
                 @click="requestPriceCP"
               >
-                Хочу пройти обучение!
+                Хочу пройти курс!
               </UButton>
             </div>
           </div>
