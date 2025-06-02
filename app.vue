@@ -548,6 +548,33 @@ const teamList = [
       </div>
     </section>
 
+    <!-- course condition section -->
+    <section class="py-8 px-3 md:px-12" id="class">
+      <div class="flex flex-col gap-4">
+        <!-- content -->
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mx-auto p-2">
+            <div
+              class="flex flex-col justify-start gap-2 bg-white rounded-lg overflow-hidden"
+            >
+              <div class="p-2 px-4 flex flex-col gap-2 text-primary-dark">
+                <h3 class="text-3xl font-bold">Критерии отбора</h3>
+              </div>
+              <div class="text-md px-4">
+                Возраст от 18 до 45 лет, онлайн-тест на базовые IT-и аналитические знания,
+                Интервью для оценки уровня английского(B1+) и мотивации.
+              </div>
+              <img
+                src="/images/condition.png"
+                alt=""
+                class="object-cover h-full w-2/4 mt-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- team section -->
     <section class="py-12 px-3 md:px-12" id="team">
       <!-- заголовок -->
