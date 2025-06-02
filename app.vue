@@ -166,11 +166,12 @@ const teamList = [
 
       <menu class="mx-auto hidden md:flex flex-row items-center justify-center gap-0">
         <ul class="list-none flex flex-row items-center justify-center gap-0">
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Курсы</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Процесс обучения</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Вопросы и ответы</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Партнеры</a></li>
-          <li><a class="px-4 py-2 hover:text-blue-600" href="">Контакты</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="#courses">Курсы</a></li>
+          <li>
+            <a class="px-4 py-2 hover:text-blue-600" href="#class">Процесс обучения</a>
+          </li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="#team">Команда</a></li>
+          <li><a class="px-4 py-2 hover:text-blue-600" href="#contacts">Контакты</a></li>
         </ul>
       </menu>
 
@@ -232,7 +233,10 @@ const teamList = [
           <!-- items step 1 -->
           <div class="relative w-9/12 flex flex-col bg-white rounded-lg p-4 mt-6">
             <h4 class="font-semibold">Гибридное обучение</h4>
-            <p>Проходите курс онлайн или офлайн – выбирайте удобный формат.</p>
+            <p>
+              Интерактивные прямые эфиры в Zoom / Teams и очные консультации (office
+              hours) в Кызылорде.
+            </p>
 
             <div
               class="absolute right-3 -top-4 flex justify-center items-center h-8 w-8 rounded-lg bg-blue-400 text-white font-black"
@@ -267,29 +271,36 @@ const teamList = [
     </section>
 
     <!-- sprint courses section -->
-    <section class="py-8 px-3 md:px-12">
+    <section class="py-8 px-3 md:px-12" id="courses">
       <div class="flex flex-col gap-4">
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
           <h3 class="text-3xl font-bold">Курсы</h3>
-          <p>⚡ Быстрый старт в IT за 15–28 недель</p>
+          <p>⚡ Быстрый старт в IT за 28 недель</p>
         </div>
         <!-- content -->
         <div class="flex flex-col gap-4">
           <!-- Product Management with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#FFEACC]">
             <div
-              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+              class="relative w-full sm:min-w-56 md:max-w-56 overflow-hidden self-stretch max-h-44 sm:max-h-none"
             >
-              <img src="/images/manager.png" alt="" class="object-cover" />
+              <img
+                src="/images/manager.png"
+                alt=""
+                class="object-cover -translate-y-40 sm:translate-y-0 h-full"
+              />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Product Management with AI</h4>
-              <p>
-                Пройдите весь путь от исследования до запуска AI-продукта: CJM, MVP,
-                AARRR-метрики и этика AI в одном интенсиве.
+              <p class="text-sm">
+                Программа шаг за шагом раскрывает полный цикл управления цифровым
+                продуктом — от исследования рынка и формулировки проблемы до вывода MVP и
+                последующего масштабирования. На протяжении курса системно используются
+                инструменты искусственного интеллекта (ChatGPT, Notion AI, Miro AI и др.)
+                для анализа данных, генерации идей и автоматизации рутины.
               </p>
-              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -311,17 +322,26 @@ const teamList = [
           <!-- Frontend with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#DDF3FF]">
             <div
-              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+              class="relative w-full sm:min-w-56 md:max-w-56 overflow-hidden self-stretch max-h-44 sm:max-h-none"
             >
-              <img src="/images/front.png" alt="" class="object-cover" />
+              <img
+                src="/images/front.png"
+                alt=""
+                class="object-cover -translate-y-40 sm:translate-y-0 h-full"
+              />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
-              <h4 class="text-xl font-bold">Frontend with AI</h4>
-              <p>
-                От HTML до React и интеграции AI: создайте своё первое SPA-приложение с
-                интеллектом.
+              <h4 class="text-xl font-bold">Frontend Development with AI</h4>
+              <p class="text-sm">
+                Курс Frontend Development with AI — это 28-недельная программа для
+                новичков, желающих освоить веб-разработку с нуля. Студенты изучают HTML,
+                CSS, JavaScript и React, осваивают Git и GitHub, и публикуют собственные
+                проекты. С первых недель используются AI-инструменты: GitHub Copilot,
+                генераторы дизайна, AI API. Программа делает упор на практику, пошаговое
+                освоение и визуальные объяснения. Выпускники умеют создавать современные
+                веб-интерфейсы с элементами AI и получают прочную базу для начала карьеры.
               </p>
-              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -343,16 +363,27 @@ const teamList = [
           <!-- Backend with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#E1E6E8]">
             <div
-              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+              class="relative w-full sm:min-w-56 md:max-w-56 overflow-hidden self-stretch max-h-44 sm:max-h-none"
             >
-              <img src="/images/back.png" alt="" class="object-cover" />
+              <img
+                src="/images/back.png"
+                alt=""
+                class="object-cover -translate-y-40 sm:translate-y-0 h-full"
+              />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
-              <h4 class="text-xl font-bold">Backend with AI</h4>
-              <p>
-                Освойте Flask, SQL и AI-интеграции — от первого API до продакшн-деплоя.
+              <h4 class="text-xl font-bold">Backend Development with AI</h4>
+              <p class="text-sm">
+                Курс Backend Development with AI — это 28-недельная практическая
+                программа, где студенты осваивают Python, Flask, базы данных и API с
+                интеграцией ИИ-инструментов (ChatGPT, Copilot, OpenAI API). Обучение
+                построено на практике (80%) и проходит в гибридном формате: онлайн-сессии
+                и office hours. С нуля участники учатся разрабатывать и развёртывать
+                backend-сервисы с элементами искусственного интеллекта. Финальный
+                командный проект — полноценный микросервис с AI-функциями. Выпускники
+                получают сертификат Junior Backend Engineer AI Specialization.
               </p>
-              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -374,17 +405,27 @@ const teamList = [
           <!-- Competitive Programming with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#FFF5D1]">
             <div
-              class="relative min-w-56 md:h-full overflow-hidden h-32 w-full md:max-w-56 rounded-tl-xl rounded-bl-xl"
+              class="relative w-full sm:min-w-56 md:max-w-56 overflow-hidden self-stretch max-h-44 sm:max-h-none"
             >
-              <img src="/images/act.png" alt="" class="object-cover" />
+              <img
+                src="/images/act.png"
+                alt=""
+                class="object-cover -translate-y-40 sm:translate-y-0 h-full"
+              />
             </div>
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Спортивное программирование с AI</h4>
-              <p>
-                Решай задачи Codeforces, изучай C++ и Python и используй AI-ассистентов
-                как репетиторов и тестировщиков.
+              <p class="text-sm">
+                Спортивное программирование с AI — это 28-недельный курс для новичков,
+                обучающий решению алгоритмических задач с помощью Python, C++ и Java.
+                Студенты проходят базовые структуры данных и алгоритмы (поиск, сортировки,
+                жадные алгоритмы, динамика, графы) и учатся использовать AI-инструменты
+                (ChatGPT, Copilot, Python Tutor) для обучения, отладки и автоматической
+                проверки решений. Курс включает регулярную практику на Codeforces, парное
+                программирование и финальный контест. Выпускники получают уверенные навыки
+                Junior Competitive Programmer с акцентом на эффективное применение ИИ.
               </p>
-              <p class="text-slate-700 font-bold">28 недель</p>
+              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
               <p class="text-slate-700 font-bold">Индивидуальный контест-проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -454,7 +495,7 @@ const teamList = [
     </section>
 
     <!-- course ways section -->
-    <section class="py-8 px-3 md:px-12">
+    <section class="py-8 px-3 md:px-12" id="class">
       <div class="flex flex-col gap-4">
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
@@ -472,7 +513,11 @@ const teamList = [
                 Интерактивные занятия, на которых преподаватели объясняют ключевые
                 концепции и принципы разработки.
               </div>
-              <img src="/images/way-2.png" alt="" class="object-cover w-full mt-auto" />
+              <img
+                src="/images/way-2.png"
+                alt=""
+                class="object-cover h-full w-full mt-auto"
+              />
             </div>
           </div>
           <div class="md:w-2/6 p-2">
@@ -504,7 +549,7 @@ const teamList = [
     </section>
 
     <!-- team section -->
-    <section class="py-12 px-3 md:px-12">
+    <section class="py-12 px-3 md:px-12" id="team">
       <!-- заголовок -->
       <div class="mb-8">
         <h3 class="text-3xl font-bold text-black">Наша команда</h3>
@@ -555,6 +600,7 @@ const teamList = [
 
     <!-- footer  -->
     <footer
+      id="contacts"
       class="relatie pb-12 px-3 md:px-12 py-7 bg-slate-900 text-white rounded-tl-2xl rounded-tr-2xl"
     >
       <img
@@ -572,10 +618,10 @@ const teamList = [
           <ul
             class="flex flex-col md:flex-row items-start md:items-center md:justify-center gap-4 font-bold"
           >
-            <li><a class="hover:text-blue-600" href="">Главная</a></li>
-            <li><a class="hover:text-blue-600" href="">Курсы</a></li>
-            <li><a class="hover:text-blue-600" href="">Процесс обучения</a></li>
-            <li><a class="hover:text-blue-600" href="">Вопросы и ответы</a></li>
+            <li><a class="hover:text-blue-600" href="#">Главная</a></li>
+            <li><a class="hover:text-blue-600" href="#courses">Курсы</a></li>
+            <li><a class="hover:text-blue-600" href="#class">Процесс обучения</a></li>
+            <li><a class="hover:text-blue-600" href="#team">Команда</a></li>
           </ul>
         </div>
         <div class="flex flex-col items-start md:w-2/4 gap-4 mt-6 md:mt-0">
