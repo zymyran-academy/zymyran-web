@@ -419,7 +419,7 @@ const teamList = [
                 программирование и финальный контест. Выпускники получают уверенные навыки
                 Junior Competitive Programmer с акцентом на эффективное применение ИИ.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
+              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
               <p class="text-slate-700 font-bold">Индивидуальный контест-проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
