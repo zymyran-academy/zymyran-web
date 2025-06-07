@@ -295,7 +295,7 @@ const teamList = [
                 инструменты искусственного интеллекта (ChatGPT, Notion AI, Miro AI и др.)
                 для анализа данных, генерации идей и автоматизации рутины.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
+              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -336,7 +336,7 @@ const teamList = [
                 освоение и визуальные объяснения. Выпускники умеют создавать современные
                 веб-интерфейсы с элементами AI и получают прочную базу для начала карьеры.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
+              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -377,7 +377,7 @@ const teamList = [
                 микросервис с AI-функциями. Выпускники получают сертификат Junior Backend
                 Engineer AI Specialization.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (261 академических часов)</p>
+              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
