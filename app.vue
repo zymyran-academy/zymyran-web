@@ -231,7 +231,7 @@ const teamList = [
           <!-- items step 1 -->
           <div class="relative w-9/12 flex flex-col bg-white rounded-lg p-4 mt-6">
             <h4 class="font-semibold">Онлайн обучение</h4>
-            <p>Интерактивные прямые эфиры в Zoom / Teams</p>
+            <p>Еженедельно: две 2-часовые онлайн-сессии, плюс 2-часовой Code Review & Jam</p>
 
             <div
               class="absolute right-3 -top-4 flex justify-center items-center h-8 w-8 rounded-lg bg-blue-400 text-white font-black"
