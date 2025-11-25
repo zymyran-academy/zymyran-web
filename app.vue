@@ -76,11 +76,6 @@ const teamList = [
     experience: "CVM менеджер Tele2, MSc Data Science",
   },
   {
-    name: "Каракойшы Аббас",
-    role: "Backend Coach",
-    experience: "Senior PHP/Bitrix разработчик в АО «МФО KMF»",
-  },
-  {
     name: "Maxim Nosov",
     role: "DevOps Mentor",
     experience: "Full Stack инженер (React/Next, Node, Docker, CI/CD)",
