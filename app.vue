@@ -266,7 +266,7 @@ const teamList = [
         <!-- title -->
         <div class="flex flex-col gap-2 text-primary-dark">
           <h3 class="text-3xl font-bold">Курсы</h3>
-          <p>⚡ Быстрый старт в IT за 28 недель</p>
+          <p>⚡ Быстрый старт в IT за 26 недель</p>
         </div>
         <!-- content -->
         <div class="flex flex-col gap-4">
@@ -290,7 +290,7 @@ const teamList = [
                 инструменты искусственного интеллекта (ChatGPT, Notion AI, Miro AI и др.)
                 для анализа данных, генерации идей и автоматизации рутины.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
+              <p class="text-slate-700 font-bold">26 недель (208 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -323,7 +323,7 @@ const teamList = [
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Frontend Development with AI</h4>
               <p class="text-sm">
-                Курс Frontend Development with AI — это 28-недельная программа для
+                Курс Frontend Development with AI — это 26-недельная программа для
                 новичков, желающих освоить веб-разработку с нуля. Студенты изучают HTML,
                 CSS, JavaScript и React, осваивают Git и GitHub, и публикуют собственные
                 проекты. С первых недель используются AI-инструменты: GitHub Copilot,
@@ -331,7 +331,7 @@ const teamList = [
                 освоение и визуальные объяснения. Выпускники умеют создавать современные
                 веб-интерфейсы с элементами AI и получают прочную базу для начала карьеры.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
+              <p class="text-slate-700 font-bold">26 недель (208 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -364,7 +364,7 @@ const teamList = [
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Backend Development with AI</h4>
               <p class="text-sm">
-                Курс Backend Development with AI — это 28-недельная практическая
+                Курс Backend Development with AI — это 26-недельная практическая
                 программа, где студенты осваивают Python, Flask, базы данных и API с
                 интеграцией ИИ-инструментов (ChatGPT, Copilot, OpenAI API). С нуля
                 участники учатся разрабатывать и развёртывать backend-сервисы с элементами
@@ -372,7 +372,7 @@ const teamList = [
                 микросервис с AI-функциями. Выпускники получают сертификат Junior Backend
                 Engineer AI Specialization.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
+              <p class="text-slate-700 font-bold">26 недель (208 академических часов)</p>
               <p class="text-slate-700 font-bold">Командный финальный проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
@@ -405,7 +405,7 @@ const teamList = [
             <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
               <h4 class="text-xl font-bold">Спортивное программирование с AI</h4>
               <p class="text-sm">
-                Спортивное программирование с AI — это 28-недельный курс для новичков,
+                Спортивное программирование с AI — это 26-недельный курс для новичков,
                 обучающий решению алгоритмических задач с помощью Python, C++ и Java.
                 Студенты проходят базовые структуры данных и алгоритмы (поиск, сортировки,
                 жадные алгоритмы, динамика, графы) и учатся использовать AI-инструменты
@@ -414,7 +414,7 @@ const teamList = [
                 программирование и финальный контест. Выпускники получают уверенные навыки
                 Junior Competitive Programmer с акцентом на эффективное применение ИИ.
               </p>
-              <p class="text-slate-700 font-bold">28 недель (224 академических часов)</p>
+              <p class="text-slate-700 font-bold">26 недель (208 академических часов)</p>
               <p class="text-slate-700 font-bold">Индивидуальный контест-проект</p>
               <p class="text-2xl font-extrabold text-slate-700">
                 400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
