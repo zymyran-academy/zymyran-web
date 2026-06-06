@@ -27,6 +27,12 @@ const handleSubmit = () => {
   sendMessage(message);
 };
 
+const requestPriceVibeCode = () => {
+  const message = `Добрый день! Обращение с сайта.
+Прошу проконсультировать по спринт-курсу 'Vibe Code'`;
+  sendMessage(message);
+};
+
 const requestPriceLaravel = () => {
   const message = `Добрый день! Обращение с сайта.
 Прошу проконсультировать по спринт-курсу 'Laravel'`;
@@ -270,6 +276,42 @@ const teamList = [
         </div>
         <!-- content -->
         <div class="flex flex-col gap-4">
+<!-- Frontend with AI -->
+          <div class="flex flex-col md:flex-row rounded-xl bg-[#DDF3FF]">
+            <div
+              class="relative w-full sm:min-w-56 md:max-w-56 overflow-hidden self-stretch max-h-44 sm:max-h-none"
+            >
+              <img
+                src="/images/front.png"
+                alt=""
+                class="object-cover -translate-y-40 sm:translate-y-0 h-full"
+              />
+            </div>
+            <div class="w-full md:w-2/4 px-4 py-4 flex flex-col gap-2 text-primary-dark">
+              <h4 class="text-xl font-bold">Vibe Coding</h4>
+              <p class="text-sm">
+                Курс «Vibe Coding» — это современная образовательная программа для начинающих, которая помогает студентам с нуля освоить создание IT-продуктов с использованием AI-инструментов, frontend-основ, API, баз данных и no-code/low-code подходов. Программа ориентирована на практику и построена так, чтобы студент постепенно прошёл путь от первых шагов в разработке до создания собственного цифрового продукта. Обучение проходит полностью онлайн 3 раза в неделю: две живые онлайн-сессии с преподавателем и одна отдельная сессия помощи по домашним заданиям и теме недели. Все материалы, задания, презентации, записи занятий и прогресс доступны в собственной LMS-платформе школы, интегрированной с OpenAI API. К концу курса студент создаёт финальный проект, размещает его на GitHub, публикует через деплой и защищает перед преподавателями или менторами. Выпускник получает практическую базу, портфолио и навыки, необходимые для дальнейшего развития в направлении Junior-разработчика.
+              </p>
+              <p class="text-slate-700 font-bold">26 недель (208 академических часов)</p>
+              <p class="text-slate-700 font-bold">Командный финальный проект</p>
+              <p class="text-2xl font-extrabold text-slate-700">
+                400&nbsp;000&nbsp;<span class="text-xl font-semibold align-center"
+                  >₸</span
+                >
+              </p>
+
+              <UButton
+                color="primary"
+                class="w-fit px-6"
+                variant="solid"
+                @click="requestPriceVibeCode"
+              >
+                Хочу пройти курс!
+              </UButton>
+            </div>
+          </div>
+
+
           <!-- Product Management with AI -->
           <div class="flex flex-col md:flex-row rounded-xl bg-[#FFEACC]">
             <div
